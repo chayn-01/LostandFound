@@ -8,6 +8,12 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
     <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="mb-4">
+            <a href="{{ url()->previous() }}" class="inline-flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                <span aria-hidden="true">←</span>
+                <span>Back</span>
+            </a>
+        </div>
         <div class="mb-6 flex items-center justify-between">
             <a href="{{ route('home') }}" class="text-lg font-bold text-indigo-700">ANYwhere</a>
             <div class="text-sm">

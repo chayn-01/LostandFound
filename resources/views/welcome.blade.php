@@ -11,7 +11,6 @@
         <div class="rounded-3xl p-8 shadow-xl" style="background: linear-gradient(110deg, var(--any-primary) 0%, #4b8bb7 45%, var(--any-cyan) 100%); color: #fff;">
             <h1 class="text-4xl font-extrabold tracking-wide">ANYwhere</h1>
             <p class="mt-2 text-lg">Ay! Nasaan na Yon!</p>
-            <p class="mt-4 max-w-2xl text-slate-100">A lost and found management system for the University of the Cordilleras.</p>
             <div class="mt-6 flex gap-3">
                 @auth
                     <a href="{{ route('items.index') }}" class="rounded-md bg-white px-4 py-2 font-semibold" style="color: var(--any-primary);">Open Dashboard</a>
