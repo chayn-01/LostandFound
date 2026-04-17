@@ -2,7 +2,7 @@
     <x-slot name="header">
         <div class="flex items-center justify-between">
             <h2 class="text-xl font-bold" style="color: var(--any-text);">Edit Item Report</h2>
-            <a href="{{ route('items.index') }}" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">← Back to Reports</a>
+            <x-back-link :href="route('items.index')" label="Back to Reports" />
         </div>
     </x-slot>
 

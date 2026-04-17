@@ -4,7 +4,7 @@
             <h2 class="font-semibold text-xl leading-tight" style="color: var(--any-text);">
                 {{ __('Profile') }}
             </h2>
-            <a href="{{ route('items.index') }}" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">← Back to Reports</a>
+            <x-back-link :href="route('items.index')" label="Back to Reports" />
         </div>
     </x-slot>
 

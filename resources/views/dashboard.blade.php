@@ -4,7 +4,7 @@
             <h2 class="font-semibold text-xl leading-tight" style="color: var(--any-text);">
                 {{ __('Dashboard') }}
             </h2>
-            <a href="{{ route('home') }}" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">← Back to Home</a>
+            <x-back-link :href="route('home')" label="Back to Home" />
         </div>
     </x-slot>
 
