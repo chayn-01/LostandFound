@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --any-bg: #f6fdf2;
+        --any-surface: #ffffff;
+        --any-mint: #f2feea;
+        --any-cyan: #acecee;
+        --any-primary: #3b79a6;
+        --any-primary-strong: #2f648a;
+        --any-border: #d6e8ef;
+        --any-text: #1f3443;
+        --any-text-soft: #4f6878;
+    }
+}
+
+@layer components {
+    .any-page {
+        @apply min-h-screen;
+        background: linear-gradient(180deg, var(--any-bg) 0%, #ffffff 100%);
+        color: var(--any-text);
+    }
+
+    .any-surface {
+        @apply rounded-xl border shadow-sm;
+        background-color: var(--any-surface);
+        border-color: var(--any-border);
+    }
+
+    .any-surface-soft {
+        @apply rounded-xl border;
+        background-color: var(--any-mint);
+        border-color: var(--any-border);
+    }
+
+    .any-btn-primary {
+        @apply rounded-md px-4 py-2 text-sm font-semibold text-white transition;
+        background-color: var(--any-primary);
+    }
+
+    .any-btn-primary:hover {
+        background-color: var(--any-primary-strong);
+    }
+
+    .any-link {
+        color: var(--any-primary);
+    }
+
+    .any-link:hover {
+        color: var(--any-primary-strong);
+    }
+}
